@@ -9,6 +9,7 @@ obj-$(CONFIG_BLOCK) := bio.o elevator.o blk-core.o blk-tag.o blk-sysfs.o \
 			blk-mq-sysfs.o blk-mq-cpu.o blk-mq-cpumap.o ioctl.o \
 			genhd.o scsi_ioctl.o partition-generic.o ioprio.o \
 			partitions/
+
 obj-$(CONFIG_HISI_BLK_CORE)     += hisi-blk-core.o hisi-blk-settings.o hisi-blk-ft.o hisi-blk-sysfs.o
 obj-$(CONFIG_HISI_BLK_MQ) += hisi-blk-mq-tag.o
 obj-$(CONFIG_HISI_BLK_MQ_DUMP) += hisi-blk-mq-dump.o
@@ -24,6 +25,7 @@ obj-$(CONFIG_BLK_DEV_THROTTLING)	+= blk-throttle.o
 obj-$(CONFIG_IOSCHED_NOOP)	+= noop-iosched.o
 obj-$(CONFIG_IOSCHED_DEADLINE)	+= deadline-iosched.o
 obj-$(CONFIG_IOSCHED_ROW)	+= row-iosched.o
+obj-$(CONFIG_IOSCHED_SIOPLUS)	+= sioplus-iosched.o
 obj-$(CONFIG_IOSCHED_CFQ)	+= cfq-iosched.o
 
 obj-$(CONFIG_BLOCK_COMPAT)	+= compat_ioctl.o
